@@ -28,4 +28,5 @@ require("lazy").setup({
 	require("plugins.gitsigns"),
 	require("plugins.ident-blankline"),
 	require("plugins.misc"),
+	require("plugins.multicursors"),
 })
