@@ -29,4 +29,5 @@ require("lazy").setup({
 	require("plugins.ident-blankline"),
 	require("plugins.misc"),
 	require("plugins.multicursors"),
+	require("plugins.diffview"),
 })
