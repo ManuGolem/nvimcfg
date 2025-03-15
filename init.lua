@@ -31,4 +31,5 @@ require("lazy").setup({
 	require("plugins.multicursors"),
 	require("plugins.diffview"),
 	require("plugins.autotag"),
+	require("plugins.neoscroll"),
 })
