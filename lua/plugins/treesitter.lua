@@ -32,6 +32,7 @@ return { -- Highlight, edit, and navigate code
 			"tsx",
 			"css",
 			"html",
+			"rasi",
 		},
 		-- Autoinstall languages that are not installed
 		auto_install = true,
@@ -49,4 +50,18 @@ return { -- Highlight, edit, and navigate code
 	--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
 	--    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
 	--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+	config = function(_, opts)
+		vim.filetype.add({
+			extension = { rasi = "rasi" },
+			pattern = {
+				[".*/waybar/config"] = "jsonc",
+				[".*/mako/config"] = "dosini",
+				[".*/kitty/*.conf"] = "bash",
+				[".*/hypr/.*%.conf"] = "hyprlang",
+			},
+		})
+
+		---@diagnostic disable-next-line: missing-fields
+		require("nvim-treesitter.configs").setup(opts)
+	end,
 }
