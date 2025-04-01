@@ -36,7 +36,7 @@ return {
 					"typescript",
 					"typescriptreact",
 				},
-				extra_args = { "--tab-width", "4" },
+				extra_args = { "--tab-width", "4", "--print-width", "160" },
 			}),
 			formatting.stylua,
 			formatting.shfmt.with({ args = { "-i", "4" } }),
