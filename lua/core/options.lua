@@ -1,4 +1,5 @@
 vim.wo.number = true
+vim.o.relativenumber = true
 vim.o.clipboard = "unnamedplus"
 vim.o.wrap = false
 vim.o.linebreak = true
@@ -12,5 +13,4 @@ vim.o.softtabstop = 4
 vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.o.foldlevel = 20
-vim.o.foldmethod = "expr"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldmethod = "indent"
