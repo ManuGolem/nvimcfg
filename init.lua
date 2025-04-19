@@ -32,4 +32,5 @@ require("lazy").setup({
 	require("plugins.autotag"),
 	require("plugins.neoscroll"),
 	require("plugins.highlight"),
+	require("plugins.precognition"),
 })

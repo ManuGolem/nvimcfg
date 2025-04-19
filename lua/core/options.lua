@@ -1,5 +1,7 @@
-vim.wo.number = true
-vim.o.relativenumber = true
+vim.opt.nu = true
+vim.opt.relativenumber = true
+vim.opt.statuscolumn = [[%!printf('%2d %2d  ',v:lnum,v:relnum)]]
+
 vim.o.clipboard = "unnamedplus"
 vim.o.wrap = false
 vim.o.linebreak = true
