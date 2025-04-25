@@ -1,6 +1,5 @@
 require("core.options")
 require("core.keymaps")
-
 -- Instalacion de lazy plugin
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -14,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 --Plugins
 require("lazy").setup({
 	require("plugins.neotree"),
-	require("plugins.colortheme"),
+	require("plugins.everforest"),
 	require("plugins.bufferline"),
 	require("plugins.lualine"),
 	require("plugins.treesitter"),
@@ -24,13 +23,10 @@ require("lazy").setup({
 	require("plugins.tailwindcss"),
 	require("plugins.none-ls"),
 	require("plugins.alpha"),
-	require("plugins.gitsigns"),
 	require("plugins.ident-blankline"),
 	require("plugins.misc"),
-	require("plugins.multicursors"),
 	require("plugins.diffview"),
 	require("plugins.autotag"),
 	require("plugins.neoscroll"),
 	require("plugins.highlight"),
-	require("plugins.precognition"),
 })
