@@ -30,4 +30,5 @@ require("lazy").setup({
 	require("plugins.neoscroll"),
 	require("plugins.highlight"),
 	require("plugins.latex"),
+	require("plugins.obsidian"),
 })
